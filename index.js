@@ -1,27 +1,30 @@
 const pet = {
-    name: 'Pheobe Cinnamon Sunrise',
-    species: 'Dog',
-    breed: 'Miniture Pitbull Terrier',
+    name: 'Phoebe Cinnamon Sunrise',
+    species: 'dog',
+    breed: 'miniature pitbull terrier',
     happiness: 50,
-
-    playwithPheobe: function () {
-        console.log(`You played with ${this.name}! Happiness is now ${happiness + this.happiness}!`);
+    playWithPhoebe: function () {
+        console.log(`You played with ${this.name}! Happiness is now ${this.happiness + 10}!`);
         this.happiness += 10;
     },
-
-    feedPheobe: function(){
-
+    feedPhoebe: function () {
+        console.log(`You fed ${this.name}! Happiness is now ${this.happiness + 20}!`);
+        this.happiness += 20;
     },
-
     status: function () {
-console.log(`Phoebe Status...Name: ${ths.name}, Species: ${this.species}, Happiness: ${this.happiness}`);
+        console.log(`Phoebe status...name: ${this.name}, species: ${this.species}, happiness: ${this.happiness}`);
+    },
+    rename: function (newName) {
+        this.name = newName;
+        console.log(`The pet's new name is ${this.name}`);
     }
+};
 
-}
+pet.status();
+console.log(pet.playWithPhoebe());
+pet.status();
+console.log(pet.feedPhoebe());
+pet.status();
+pet.rename('Peppermint');
+pet.status();
 
-
-
-console.log(pet.name);
-console.log(pet.species);
-console.log(pet.breed);
-console.log(pet.happiness);
