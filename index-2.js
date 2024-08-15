@@ -28,11 +28,19 @@ function createPet(nameInput, speciesInput, happinessInput, energyInput) {
 }
 
 let pet = createPet("Pheobe", "Dog", 100, 100);
+pet.status();
+console.log(pet.play());
+pet.status();
+console.log(pet.feed());
+pet.status();
 let pet2 = createPet("Johnny", "Lizard", 70, 100);
 let pet3 = createPet("Bella", "Pig", 100, 100);
-
-pet.status();
 pet2.status();
 pet3.status();
-pet.status(pet.rest);
+pet.rest();
+pet.status();
+pet2.rest();
+pet2.status();
+pet3.rest();
+pet3.status();
 
