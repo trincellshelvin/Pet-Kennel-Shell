@@ -107,7 +107,7 @@ function createFishTank(numFish, nameInput, speciesInput, happinessInput, energy
     return fishTank;
 }
 
-let petDog = createDogKennel("Pheobe", "Dog", 100, 100);
+let petDog1 = createDogKennel("Pheobe", "Dog", 100, 100);
 let petDog2 = createDogKennel("Buddy", "Dog", 100, 100);
 let petDog3 = createDogKennel("Peppermint", "Dog", 100, 100);
 let petDog4 = createDogKennel("SweetPea", "Dog", 100, 100);
@@ -117,7 +117,7 @@ let dogKennel2 = createDogKennel("Buddy", "Dog", 100, 100);
 let dogKennel3 = createDogKennel("Peppermint", "Dog", 100, 100);
 let dogKennel4 = createDogKennel("SweetPea", "Dog", 100, 100);
 let dogKennel5 = createDogKennel("Kelly", "Dog", 100, 100);
-let petCat = createCatKennel("Stella", "Cat", 50, 100);
+let petCat1 = createCatKennel("Stella", "Cat", 50, 100);
 let petCat2 = createCatKennel("Chole", "Cat", 50, 100);
 let petCat3 = createCatKennel("Daisy", "Cat", 50, 100);
 let petCat4  = createCatKennel("Izzy", "Cat", 50, 100);
@@ -127,7 +127,7 @@ let catKennel2 = createCatKennel("Chole", "Cat", 50, 100);
 let catKennel3 = createCatKennel("Daisy", "Cat", 50, 100);
 let catKennel4 = createCatKennel("Izzy", "Cat", 50, 100);
 let catKennel5 = createCatKennel("Mr.Rogers", "Cat", 50, 100);
-let petFish = createFishTank("BoomBoom", "Fish", 50, 100);
+let petFish1 = createFishTank("BoomBoom", "Fish", 50, 100);
 let petFish2 = createFishTank("Grant", "Fish", 50, 100);
 let petFish3 = createFishTank("George", "Fish", 50, 100);
 let petFish4  = createFishTank("Dot", "Fish", 50, 100);
@@ -139,21 +139,27 @@ let fishTank4 = createFishTank("Dot", "Fish", 50, 100);
 let fishTank5 = createFishTank("Gulper", "Fish", 50, 100);
 
 // dogs 
+dogKennel1.push(petDog1);
 console.log(dogKennel1);
 dogKennel1.forEach(dog => dog.status());
+dogKennel2.push(petDog2)
 console.log(dogKennel2);
 dogKennel2.forEach(dog => dog.status());
+dogKennel3.push(petDog3)
 console.log(dogKennel3);
 dogKennel3.forEach(dog => dog.status());
+dogKennel4.push(petDog4);
 console.log(dogKennel4);
 dogKennel4.forEach(dog => dog.status());
+dogKennel5.push(petDog5);
 console.log(dogKennel5);
 dogKennel5.forEach(dog => dog.status());
 //cats
+catKennel1.push(petCat1);
 console.log(catKennel1);
-catKennel1.forEach(dog => dog.status());
+catKennel1.forEach(cat => cat.status());
 console.log(catKennel2);
-catKennel2.forEach(dog => dog.status());
+catKennel2.forEach(cat => cat.status());
 console.log(catKennel3);
 catKennel3.forEach(cat => cat.status());
 console.log(catKennel4);
