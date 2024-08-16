@@ -1,3 +1,4 @@
+console.log("test");
 function createDogKennel(numDogs, nameInput, speciesInput, happinessInput, energyInput) {
     let dogKennel = [];
     for (let i = 0; i < numDogs; i++) {
@@ -34,8 +35,17 @@ function createDogKennel(numDogs, nameInput, speciesInput, happinessInput, energ
     }
     return dogKennel;
 }
-//dogs and their kennel assignments
-let dogKennel= dogKennel[0];
-let petDog1 = createDogKennel(5, "Pheobe", "Dog", 100, 100); let dogKennel1 = createDogKennel("Pheobe", "Dog", 100, 100);
+let dogKennel1 = createDogKennel("Pheobe", "Dog", 100, 100);
+let dogKennel2 = createDogKennel("Buddy", "Dog", 100, 100);
+let dogKennel3 = createDogKennel("Peppermint", "Dog", 100, 100);
+let dogKennel4 = createDogKennel("SweetPea", "Dog", 100, 100);
+let dogKennel5 = createDogKennel("Kelly", "Dog", 100, 100);
+// Dog function calls
+console.log(dogKennel1); dogKennel1.forEach(dog => dog.status());
+console.log(dogKennel2); dogKennel2.forEach(dog => dog.status());
+console.log(dogKennel3); dogKennel3.forEach(dog => dog.status());
+console.log(dogKennel4); dogKennel4.forEach(dog => dog.status());
+console.log(dogKennel5); dogKennel5.forEach(dog => dog.status());
 
-console.table(dogKennel[0]); dogKennel[0].forEach(dog => dog.status());
+
+
