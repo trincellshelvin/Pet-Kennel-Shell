@@ -41,7 +41,8 @@ let dogKennel3 = createDogKennel(1, "Peppermint", "Dog", 100, 100);
 let dogKennel4 = createDogKennel(1, "SweetPea", "Dog", 100, 100);
 let dogKennel5 = createDogKennel(1, "Kelly", "Dog", 100, 100);
 // Dog function calls
-console.log(dogKennel1); dogKennel1.forEach(dog => dog.status());
+console.log(dogKennel1); dogKennel1[0].play(); 
+ dogKennel1.forEach(dog => dog.status());
 console.log(dogKennel2); dogKennel2.forEach(dog => dog.status());
 console.log(dogKennel3); dogKennel3.forEach(dog => dog.status());
 console.log(dogKennel4); dogKennel4.forEach(dog => dog.status());
