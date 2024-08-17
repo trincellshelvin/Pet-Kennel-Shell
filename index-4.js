@@ -1,5 +1,5 @@
 console.log("test");
-let dogKennel = [];
+let dogKennel = []
 function createDogKennel(numDogs, nameInput, speciesInput, happinessInput, energyInput) {
     for (let i = 0; i < numDogs; i++) {
         let petDog = {
@@ -41,12 +41,20 @@ let dogKennel3 = createDogKennel(1, "Peppermint", "Dog", 100, 100);
 let dogKennel4 = createDogKennel(1, "SweetPea", "Dog", 100, 100);
 let dogKennel5 = createDogKennel(1, "Kelly", "Dog", 100, 100);
 // Dog function calls
-console.log(dogKennel1); dogKennel1[0].play(); 
- dogKennel1.forEach(dog => dog.status());
-console.log(dogKennel2); dogKennel2.forEach(dog => dog.status());
-console.log(dogKennel3); dogKennel3.forEach(dog => dog.status());
-console.log(dogKennel4); dogKennel4.forEach(dog => dog.status());
-console.log(dogKennel5); dogKennel5.forEach(dog => dog.status());
-
-
-
+//Kennel1
+console.log(dogKennel1); dogKennel1[0].play(); dogKennel1[0].status(); dogKennel1[0].feed(); 
+dogKennel1[0].status(); dogKennel1[0].rest(); dogKennel1[0].status(); dogKennel1[0].randomEvent(); 
+//kennel2
+console.log(dogKennel2); dogKennel2[0].play(); dogKennel2[0].status(); dogKennel2[0].feed(); 
+dogKennel2[0].status(); dogKennel2[0].rest(); dogKennel2[0].status(); dogKennel2[0].randomEvent();
+//kennel3
+console.log(dogKennel3); dogKennel3[0].play(); dogKennel3[0].status(); dogKennel3[0].feed(); 
+dogKennel3[0].status(); dogKennel3[0].rest(); dogKennel3[0].status(); dogKennel3[0].randomEvent();
+//kennel4
+console.log(dogKennel4); dogKennel4[0].play(); dogKennel4[0].status(); dogKennel4[0].feed(); 
+dogKennel4[0].status(); dogKennel4[0].rest(); dogKennel4[0].status(); dogKennel4[0].randomEvent();
+//kennel5
+console.log(dogKennel5); dogKennel5[0].play(); dogKennel5[0].status(); dogKennel5[0].feed(); 
+dogKennel5[0].status(); dogKennel5[0].rest(); dogKennel5[0].status(); dogKennel5[0].randomEvent();
+//all kennels
+dogKennel.forEach(dog => dog.status());
