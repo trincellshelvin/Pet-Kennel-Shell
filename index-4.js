@@ -12,7 +12,7 @@ function createDogKennel(numDogs, nameInput, speciesInput, happinessInput, energ
                 console.log(`Pet name: ${this.name} Species: ${this.species} Happiness: ${this.happiness} Energy: ${this.energy}.`);
             },
             play() {
-                this.energy -= Math.floor(Math.random() * 30) + 10; // Random energy decrease between 10 and 40
+                this.energy -= Math.floor(Math.random() * 50) + 20; // Random energy decrease between 20 and 70
                 this.happiness += Math.floor(Math.random() * 20) + 5; // Random happiness increase between 5 and 25
                 console.log(`You played with ${this.name}! Happiness is now ${this.happiness}, and energy is now ${this.energy}.`);
             },
