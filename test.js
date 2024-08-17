@@ -25,7 +25,6 @@ function createDogKennel() {
             }
             playAgain(){
                 const playCounts = [3, 1, 2]; // Number of times to play with each pet
-
                 for (let i = 0; i < pets.length; i++) {
                     for (let j = 0; j < playCounts[i]; j++) {
                         pets[i].play();
