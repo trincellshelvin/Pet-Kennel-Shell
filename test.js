@@ -1,6 +1,6 @@
 console.log("test")
 let dogKennel = [];
-function createDogKennel() {
+function createDogKennel(id, name, species, maxEnergy, maxHappiness) {
     for (let i = 0; i < kennel.length; i++) {
         //increase happiness by 10. decrease energy by 15.
         //results should be Happiness= 60 and Energy=85
@@ -10,6 +10,9 @@ function createDogKennel() {
             console.log(`You played with ${this.name}! Happiness is now ${this.happiness}, and energy is now ${this.energy}.`);
         }
         // Function to feed the pet (conditionally)
+        const kennels = {
+            dogs: [dogKennel1, dogKennel2, dogKennel3, dogKennel4, dogKennel5]
+        }
         function feed(pet) {
             pet.energy += 20; // Increase energy by 20
             console.log(`${pet.name} has been fed. New energy level: ${pet.energy}`);
@@ -30,16 +33,22 @@ function createDogKennel() {
                 }
                 console.log(`After playing, ${pets[i].name}'s status: Happiness is ${pets[i].happiness}, Energy is ${pets[i].energy}.`);
             }
+            return{
+                id: id,
+                species: species,
+                energy: Math.floor(Math.random() * 51), //random energy level between 0 and 50
+                happiness: maxHappiness
+            };
         }
     }
 
     dogKennel.push(petDog);
 }
 return dogKennel;
-}
-let dogKennel1 = createDogKennel(1, "Pheobe", "Dog", 100, 100);
-let dogKennel2 = createDogKennel(1, "Buddy", "Dog", 100, 100);
+
+let dogKennel1 = createDogKennel(1, "Pheobe", "Dog", 10, 100);
+let dogKennel2 = createDogKennel(1, "Buddy", "Dog", 50, 100);
 let dogKennel3 = createDogKennel(1, "Peppermint", "Dog", 100, 100);
-let dogKennel4 = createDogKennel(1, "SweetPea", "Dog", 100, 100);
+let dogKennel4 = createDogKennel(1, "SweetPea", "Dog", 20, 100);
 let dogKennel5 = createDogKennel(1, "Kelly", "Dog", 100, 100);
 //dog function calls
