@@ -1,15 +1,5 @@
 console.log("test")
-let dogKennel = [];
 
-let dogKennel1 = createDogKennel(1, "Pheobe", "Dog", 100, 100);
-let dogKennel2 = createDogKennel(1, "Buddy", "Dog", 100, 100);
-let dogKennel3 = createDogKennel(1, "Peppermint", "Dog", 100, 100);
-let dogKennel4 = createDogKennel(1, "SweetPea", "Dog", 100, 100);
-let dogKennel5 = createDogKennel(1, "Kelly", "Dog", 100, 100);
-//dog function calls
-
-//cat function
-let catKennel = [];
 
 let catKennel1 = createCatKennel(1, "Stella", "Cat", 50, 100);
 let catKennel2 = createCatKennel(1, "Chloe", "Cat", 50, 100);
